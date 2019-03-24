@@ -1,0 +1,16 @@
+.b-red {
+    background-color: red;
+}
+
+.b-blue {
+    background-color: blue;
+}
+
+.b-green {
+    background-color: green
+}
+
+.d-inline-block {
+    width: 200px;
+    display: inline-block
+}

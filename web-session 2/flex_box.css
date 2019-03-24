@@ -1,0 +1,28 @@
+#root {
+    width : 800px;
+    height : 800px;
+    background-color : aliceblue;
+    display: flex;
+    flex-flow: row;
+    /* justify-content: center;
+    align-items: center; */
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    justify-content: center;
+
+}
+
+.rect {
+    width : 150px;
+    height : 100px;
+    margin: 10px;
+    background-color: orange;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.self-center {
+    align-self: center;
+}

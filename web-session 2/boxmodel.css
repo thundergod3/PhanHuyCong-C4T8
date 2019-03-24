@@ -1,0 +1,51 @@
+.bg-green {
+    background-color : green;
+}
+
+.bg-yellow {
+    background-color : yellow
+}
+
+
+.w-500px {
+    width : 500px;
+}
+
+.h-200px {
+    height: 250px;
+}
+
+.border {
+    border : 1px solid red;
+    border-radius : 100px; 
+}
+
+.mt-50px {
+    margin-top : 50px;
+}
+
+.ml-50px {
+    margin-left : 50px;
+}
+
+.mr-50px {
+    margin-right : 50px;
+}
+
+.mb-50px {
+    margin-bottom : 50px;
+}
+
+.m-item {
+    /* margin : 50px 70px 100px 130px */
+    margin : 50px
+}
+
+.p-100px {
+    padding : 100px;
+}
+
+.d-inline-block {
+    display : inline-block
+}
+

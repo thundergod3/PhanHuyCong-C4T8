@@ -1,0 +1,26 @@
+/* chọn phần tử hoặc trang trí cho html, value là giá trị để trang trí */
+    /* selector {
+        property : value; 
+    }
+    */
+
+    /* chọn thẻ h1 và chuyển chữ thành màu đỏ và đây là tag name selector  */
+    h1 {
+        color : red;
+    }
+    
+    h2 {
+        color : blue
+    }
+
+    /*  id selector */
+    #Heading2 {
+        color : green;
+        font-family: 'Indie Flower', cursive;
+        font-size : 40px;
+    }
+
+    /* class selector */
+    .text-right {
+        text-align : right;
+    }
