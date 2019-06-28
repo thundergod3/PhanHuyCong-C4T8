@@ -11,7 +11,6 @@ function run() {
 
         function fetchData() {
             clear()
-            console.log(bodyTable);
 
             var fakeData = responseData;
             var listAfterFilter = fakeData.filter(function (el) {
@@ -34,7 +33,6 @@ function run() {
         }
         searchBar.addEventListener('keyup', function (e) {
             if (e.keyCode == 13) {
-                console.log('hi');
                 fetchData()
             }
         })
@@ -45,7 +43,4 @@ function run() {
 
     })
 }
-
-
-
 run()

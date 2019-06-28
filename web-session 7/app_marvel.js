@@ -95,9 +95,6 @@ function fetchCharacterById(id) {
 
         // WIKIPEDIA
 
-
-
-
         var DOMwiki = document.getElementById('references');
         var HTMLwiki = `<i id='wiki' class="fab fa-wikipedia-w"></i>`;
         DOMwiki.insertAdjacentHTML('afterbegin', HTMLwiki);

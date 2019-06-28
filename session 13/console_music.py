@@ -8,25 +8,27 @@ print('Hello one of a option')
 
 opt = [
     {
-        '1' : 'Show all songs'
+        '1': 'Show all songs'
     },
     {
-        '2' : 'Show detail of a song'
+        '2': 'Show detail of a song'
     },
     {
-        '3' : 'Play a song'
+        '3': 'Play a song'
     },
     {
-        '4' : 'Search and download songs'
+        '4': 'Search and download songs'
     },
     {
-        '5' : 'Exit'
+        '5': 'Exit'
     }
 ]
 
 song_list = []
 listToPushData = []
 while True:
+    with open('data.json', encoding='utf-8') as data:
+        dataGet = json.loads(data.read())
     for i in opt:
         for key,value in i.items():
             print(key, '.', value)
@@ -55,12 +57,12 @@ while True:
             if i == detail - 1:
                 findSuccess = True
                 SongSearched = dataGet[detail - 1]
-        
+
         if findSuccess == True:
             print(SongSearched["id"], " ", SongSearched["webpage_url"])
         else:
             print("Khong Co")
-# dataGet[0]['id']
+        # dataGet[0]['id']
 
     elif choose == 3:
         with open('data.json', encoding = 'utf-8') as data:
@@ -83,9 +85,7 @@ while True:
                 player.pause()
             elif out_put == "stop":
                 player.pause()
-                break                
-
-
+                break
 
     elif choose == 4 :
         # doc data tu file json
@@ -103,7 +103,7 @@ while True:
         search_result = ydl.extract_info(songSearch, download = False)
         song_list = search_result['entries']
 
-        #choose download a song     
+        #choose download a song
         optionsDownload = {
             'outtmpl': '%(id)s', # lấy tên file đown về là id của video
             'postprocessors': [{
@@ -123,8 +123,6 @@ while True:
         with open('data.json', 'w') as dataPush:
             dataPush = json.dump(listToPushData, dataPush)
 
-    
+
     elif choose == 5:
         break
-
-        
